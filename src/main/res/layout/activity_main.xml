@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/default_padding_rightandleft_double"
+        android:paddingRight="@dimen/default_padding_rightandleft_double"
+        android:paddingTop="@dimen/default_padding_top_double"
+        tools:context=".MainActivity">
+
+        <EditText
+            android:id="@+id/etNameField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/album_description"
+            android:inputType="textCapWords" />
+
+        <EditText
+            android:id="@+id/etPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:layout_marginTop="@dimen/default_margin"
+            android:hint="@string/phone_number"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/default_margin_double"
+            android:text="@string/toppings"
+            android:textAllCaps="true" />
+
+
+        <CheckBox
+            android:id="@+id/checkWhippedCream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:paddingLeft="24dp"
+            android:text="@string/notify_me"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <CheckBox
+            android:id="@+id/checkChocolate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/default_margin_double"
+            android:paddingLeft="24dp"
+            android:text="@string/check_box_2"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/default_margin_double"
+            android:text="@string/quantity"
+            android:textAllCaps="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bSubtract"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:onClick="decrement"
+                android:text="@string/sub" />
+
+            <TextView
+                android:id="@+id/tvQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/bSubtract"
+                android:paddingLeft="@dimen/default_padding"
+                android:paddingRight="@dimen/default_padding"
+                android:paddingTop="@dimen/default_padding"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/body1_text_size" />
+
+            <Button
+                android:id="@+id/bAdd"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="@dimen/default_margin_double"
+                android:layout_toRightOf="@+id/tvQuantity"
+                android:onClick="increment"
+                android:text="@string/add" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/default_margin_double"
+            android:layout_marginTop="@dimen/default_margin_double"
+            android:text="@string/price"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/priceValue"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/body1_text_size" />
+
+        <TextView
+            android:id="@+id/tvPriceSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin_double"
+            android:text="@string/price_Summary"
+            android:textAllCaps="true" />
+
+
+        <TextView
+            android:id="@+id/tvPriceSummaryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/body1_text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bOrder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="32dp"
+                android:onClick="submitOrder"
+                android:text="@string/order" />
+
+            <Button
+                android:id="@+id/bEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="32dp"
+                android:onClick="sendEmail"
+                android:text="email" />
+
+            <Button
+                android:id="@+id/bSMS"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="32dp"
+                android:onClick="sendSMS"
+                android:text="@string/sms" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

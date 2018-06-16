@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="body1_text_size">16sp</dimen>
+
+    <dimen name="default_margin">8dp</dimen>
+    <dimen name="default_margin_double">16dp</dimen>
+    <dimen name="default_padding_rightandleft_double">16dp</dimen>
+    <dimen name="default_padding_top_double">16dp</dimen>
+    <dimen name="default_padding">8dp</dimen>
+</resources>

@@ -274,7 +274,7 @@ public class MainActivity extends AppCompatActivity {
             price += 1;
         }
 
-        etNameField = (EditText) findViewById(R.id.etNameField);
+        etNameField = findViewById(R.id.etNameField);
         sName = etNameField.getText().toString();
 
         if (iQuantity == 0)
@@ -284,5 +284,9 @@ public class MainActivity extends AppCompatActivity {
         sPhone_number = etPhoneNumber.getText().toString();
 
         order_summary(price, finall, final1);
+
+        //New lines added
+
+
     }
 }
